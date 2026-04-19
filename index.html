@@ -6,7 +6,12 @@
   <title>Drago Tattoo</title>
   <meta name="description" content="Landing de Drago Tattoo enfocada en blackwork, anime y reservas por contacto directo.">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#120f0f">
+  <meta property="og:title" content="Drago Tattoo">
+  <meta property="og:description" content="Blackwork, anime y piezas con identidad propia.">
+  <meta property="og:type" content="website">
   <link rel="preload" as="image" href="img/hero__tatuadora.webp">
+  <link rel="preload" as="image" href="img/hero.webp">
   <link rel="icon" type="image/webp" href="img/logo.webp">
   <link rel="apple-touch-icon" href="img/logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -230,6 +235,68 @@
             <div class="process-marker" data-stage="4"></div>
           </div>
         </div>
+
+        <div class="process-carousel" aria-label="Proceso del tatuaje en etapas">
+          <article class="process-slide">
+            <div class="process-slide__media">
+              <div class="process-arm process-arm--image">
+                <img class="process-arm__image" src="img/etapa1.webp" alt="Brazo limpio antes del tatuaje" loading="lazy" decoding="async">
+                <span class="process-arm__tag">Etapa 1</span>
+                <span class="process-arm__state">Brazo limpio</span>
+              </div>
+            </div>
+            <div class="process-slide__tip">
+              <p class="process-tip__step">01</p>
+              <h3 class="process-tip__title">Brazo limpio</h3>
+              <p class="process-tip__text">Base clara y ubicacion.</p>
+            </div>
+          </article>
+
+          <article class="process-slide">
+            <div class="process-slide__media">
+              <div class="process-arm process-arm--image">
+                <img class="process-arm__image" src="img/etapa2.webp" alt="Brazo con stencil del tatuaje" loading="lazy" decoding="async">
+                <span class="process-arm__tag">Etapa 2</span>
+                <span class="process-arm__state">Stencil</span>
+              </div>
+            </div>
+            <div class="process-slide__tip">
+              <p class="process-tip__step">02</p>
+              <h3 class="process-tip__title">Stencil preciso</h3>
+              <p class="process-tip__text">Posicion y lectura del diseno.</p>
+            </div>
+          </article>
+
+          <article class="process-slide">
+            <div class="process-slide__media">
+              <div class="process-arm process-arm--image">
+                <img class="process-arm__image" src="img/etapa3.webp" alt="Brazo con lineas base del tatuaje" loading="lazy" decoding="async">
+                <span class="process-arm__tag">Etapa 3</span>
+                <span class="process-arm__state">Lineas base</span>
+              </div>
+            </div>
+            <div class="process-slide__tip">
+              <p class="process-tip__step">03</p>
+              <h3 class="process-tip__title">Lineas base</h3>
+              <p class="process-tip__text">Lineas limpias y estructura firme.</p>
+            </div>
+          </article>
+
+          <article class="process-slide">
+            <div class="process-slide__media">
+              <div class="process-arm process-arm--image process-arm--focus">
+                <img class="process-arm__image" src="img/etapa4.webp" alt="Tatuaje finalizado" loading="lazy" decoding="async">
+                <span class="process-arm__tag">Etapa 4</span>
+                <span class="process-arm__state">Pieza final</span>
+              </div>
+            </div>
+            <div class="process-slide__tip">
+              <p class="process-tip__step">04</p>
+              <h3 class="process-tip__title">Resultado final</h3>
+              <p class="process-tip__text">Contraste, detalle y terminacion.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -251,7 +318,7 @@
             <span></span>
           </div>
 
-          <div class="works__grid">
+          <div class="works__grid" data-works-grid>
             <article class="work-card work-card--featured">
               <div class="work-card__media">
                 <img src="img/blackwork/blackwork6.webp" alt="Trabajo blackwork destacado de Drago Tattoo" loading="lazy" decoding="async">
@@ -282,7 +349,7 @@
               </div>
             </article>
 
-            <article class="work-card">
+            <article class="work-card work-card--more">
               <div class="work-card__media">
                 <img src="img/blackwork/blackwork3.webp" alt="Detalle blackwork realizado en estudio" loading="lazy" decoding="async">
               </div>
@@ -292,7 +359,7 @@
               </div>
             </article>
 
-            <article class="work-card">
+            <article class="work-card work-card--more">
               <div class="work-card__media">
                 <img src="img/blackwork/blackwork4.webp" alt="Trabajo blackwork de Drago Tattoo" loading="lazy" decoding="async">
               </div>
@@ -302,7 +369,7 @@
               </div>
             </article>
 
-            <article class="work-card work-card--tall">
+            <article class="work-card work-card--tall work-card--more">
               <div class="work-card__media">
                 <img src="img/blackwork/blackwork5.webp" alt="Pieza blackwork terminada" loading="lazy" decoding="async">
               </div>
@@ -312,6 +379,10 @@
               </div>
             </article>
           </div>
+
+          <button class="works-group__toggle" type="button" data-works-toggle aria-expanded="false">
+            <span>Ver mas</span>
+          </button>
         </div>
 
         <div class="works-group" aria-labelledby="works-anime-title">
@@ -321,7 +392,7 @@
             <span></span>
           </div>
 
-          <div class="works__grid">
+          <div class="works__grid" data-works-grid>
             <article class="work-card work-card--tall">
               <div class="work-card__media">
                 <img src="img/anime/anime1.webp" alt="Tatuaje estilo anime realizado por Drago Tattoo" loading="lazy" decoding="async">
@@ -352,7 +423,7 @@
               </div>
             </article>
 
-            <article class="work-card">
+            <article class="work-card work-card--more">
               <div class="work-card__media">
                 <img src="img/anime/anime4.webp" alt="Tatuaje anime terminado" loading="lazy" decoding="async">
               </div>
@@ -362,7 +433,7 @@
               </div>
             </article>
 
-            <article class="work-card work-card--tall">
+            <article class="work-card work-card--tall work-card--more">
               <div class="work-card__media">
                 <img src="img/anime/anime5.webp" alt="Trabajo anime con composicion vertical" loading="lazy" decoding="async">
               </div>
@@ -372,7 +443,7 @@
               </div>
             </article>
 
-            <article class="work-card">
+            <article class="work-card work-card--more">
               <div class="work-card__media">
                 <img src="img/anime/anime6.webp" alt="Detalle anime realizado en estudio" loading="lazy" decoding="async">
               </div>
@@ -382,6 +453,10 @@
               </div>
             </article>
           </div>
+
+          <button class="works-group__toggle" type="button" data-works-toggle aria-expanded="false">
+            <span>Ver mas</span>
+          </button>
         </div>
       </div>
     </section>

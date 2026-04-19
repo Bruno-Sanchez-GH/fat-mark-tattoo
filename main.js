@@ -57,18 +57,33 @@ if (demoForm) {
 }
 
 if (hero && heroMachine) {
+  const waitForImage = (src) =>
+    new Promise((resolve) => {
+      const image = new Image();
+      image.src = src;
+
+      if (image.complete) {
+        resolve();
+        return;
+      }
+
+      image.addEventListener("load", () => resolve(), { once: true });
+      image.addEventListener("error", () => resolve(), { once: true });
+    });
+
   const startHeroAnimation = () => {
     window.setTimeout(() => {
       hero.classList.add("is-ready");
+      document.body.classList.add("page-is-ready");
     }, 160);
   };
 
-  if (heroMachine.complete) {
-    startHeroAnimation();
-  } else {
-    heroMachine.addEventListener("load", startHeroAnimation, { once: true });
-    heroMachine.addEventListener("error", startHeroAnimation, { once: true });
-  }
+  Promise.all([
+    waitForImage("img/hero.webp"),
+    waitForImage("img/hero__tatuadora.webp"),
+  ]).then(startHeroAnimation);
+} else {
+  document.body.classList.add("page-is-ready");
 }
 
 const lazyImages = document.querySelectorAll('img[loading="lazy"]');
@@ -94,6 +109,7 @@ lazyImages.forEach((image) => {
 });
 
 const workCards = document.querySelectorAll(".work-card");
+const worksToggles = document.querySelectorAll("[data-works-toggle]");
 
 if (workCards.length) {
   const cardObserver = new IntersectionObserver(
@@ -115,6 +131,20 @@ if (workCards.length) {
 
   workCards.forEach((card) => cardObserver.observe(card));
 }
+
+worksToggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const group = toggle.closest(".works-group");
+
+    if (!group) {
+      return;
+    }
+
+    const isExpanded = group.classList.toggle("is-expanded");
+    toggle.setAttribute("aria-expanded", String(isExpanded));
+    toggle.querySelector("span").textContent = isExpanded ? "Ver menos" : "Ver mas";
+  });
+});
 
 const processMarkers = document.querySelectorAll(".process-marker");
 const processTips = document.querySelectorAll(".process-tip");
