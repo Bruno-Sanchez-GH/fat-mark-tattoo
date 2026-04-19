@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drago Tattoo</title>
+  <meta name="description" content="Landing de Drago Tattoo enfocada en blackwork, anime y reservas por contacto directo.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preload" as="image" href="img/hero__tatuadora.webp">
+  <link rel="icon" type="image/webp" href="img/logo.webp">
+  <link rel="apple-touch-icon" href="img/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio de Drago Tattoo">
+        <span class="brand-mark" aria-hidden="true">
+          <img class="brand-logo" src="img/logo.webp" alt="">
+        </span>
+        <span class="brand-copy">
+          <span class="brand-name">Drago Tattoo</span>
+          <span class="brand-tag">Blackwork, Anime Studio</span>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Abrir menu"
+      >
+        <span class="menu-toggle__label">Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <div class="menu-panel" id="mobile-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#contacto">Contacto</a>
+        <a class="menu-panel__cta" href="#reservar">Reservar turno</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-label="Inicio">
+      <div class="hero__backdrop" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__socials" aria-label="Accesos directos">
+          <a class="hero__social-link" href="https://wa.me/5493513699983" target="_blank" rel="noreferrer" aria-label="WhatsApp de Drago Tattoo">
+            <img src="img/wsp.webp" alt="">
+          </a>
+          <a class="hero__social-link" href="https://www.instagram.com/drago_tattoo/" target="_blank" rel="noreferrer" aria-label="Instagram de Drago Tattoo">
+            <img src="img/instagram.webp" alt="">
+          </a>
+        </div>
+
+        <div class="hero__copy">
+          <p class="hero__eyebrow">Blackwork, anime y diseno a medida</p>
+
+          <div class="hero__title-wrap" aria-label="Drago Tattoo">
+            <h1 class="hero__title hero__title--shadow" aria-hidden="true">Drago Tattoo</h1>
+            <div class="hero__title-reveal" aria-hidden="true">
+              <h1 class="hero__title hero__title--ink">Drago Tattoo</h1>
+            </div>
+            <img class="hero__machine" src="img/hero__tatuadora.webp" alt="" aria-hidden="true">
+          </div>
+
+          <p class="hero__subtitle">Tu idea llevada a la piel.</p>
+
+          <div class="hero__actions">
+            <a class="hero__cta hero__cta--primary" href="#reservar">Reservar turno</a>
+            <a class="hero__cta hero__cta--ghost" href="#sobre-mi">Ver mas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-preview-strip" aria-label="Adelanto del proceso">
+      <div class="hero-preview-strip__inner">
+        <article class="hero-preview hero-preview--left">
+          <div class="hero-preview__media">
+            <img src="img/bloque1.webp" alt="Referencia visual de la consulta inicial" loading="lazy" decoding="async">
+          </div>
+          <p class="hero-preview__label">Consulta y idea</p>
+        </article>
+
+        <article class="hero-preview hero-preview--center">
+          <div class="hero-preview__media">
+            <img src="img/bloque2.webp" alt="Referencia visual del armado del diseno" loading="lazy" decoding="async">
+          </div>
+          <p class="hero-preview__label">Diseno de la pieza</p>
+        </article>
+
+        <article class="hero-preview hero-preview--right">
+          <div class="hero-preview__media">
+            <img src="img/bloque3.webp" alt="Referencia visual de la sesion de tatuaje" loading="lazy" decoding="async">
+          </div>
+          <p class="hero-preview__label">Sesion final</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="sobre-mi" aria-label="Sobre mi">
+      <div class="about__inner">
+        <div class="about__heading">
+          <p class="about__eyebrow">Texto de subtitulo</p>
+          <h2 class="about__title">Texto de sobre mi</h2>
+        </div>
+
+        <div class="about__content">
+          <div class="about__gallery" aria-label="Imagenes del estudio y tatuajes">
+            <figure class="about__photo about__photo--base">
+              <img src="img/sobre_mi1.webp" alt="Detalle de un tatuaje blackwork" loading="lazy" decoding="async">
+            </figure>
+            <figure class="about__photo about__photo--overlay">
+              <img src="img/sobre_mi2.webp" alt="Proceso del tatuaje en estudio" loading="lazy" decoding="async">
+            </figure>
+          </div>
+
+          <div class="about__copy">
+            <p>
+              Trabajo cada pieza desde la idea inicial hasta el ultimo detalle, buscando que el tatuaje
+              tenga presencia, lectura y una identidad que realmente conecte con quien lo lleva.
+            </p>
+            <p>
+              Me enfoco en blackwork, anime y composiciones pensadas para fluir con el cuerpo, cuidando
+              el proceso completo para que la experiencia se sienta clara y personalizada.
+            </p>
+            <p class="about__accent">
+              Diseno con criterio, sesion con calma y resultado con caracter.
+            </p>
+            <img class="about__signature" src="img/firma.webp" alt="Firma Drago Tattoo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="proceso" aria-label="Proceso del tatuaje">
+      <div class="process__inner">
+        <div class="process__header">
+          <p class="process__eyebrow">Proceso de trabajo</p>
+          <h2 class="process__title">Del primer trazo al resultado final</h2>
+        </div>
+
+        <div class="process__timeline">
+          <div class="process__sticky">
+            <div class="process__visual">
+              <div class="process-arm-display" aria-hidden="true">
+                <div class="process-arm-layer process-arm-layer--1 is-active">
+                  <div class="process-arm process-arm--image">
+                    <img class="process-arm__image" src="img/etapa1.webp" alt="" loading="lazy" decoding="async">
+                    <span class="process-arm__tag">Etapa 1</span>
+                    <span class="process-arm__state">Brazo limpio</span>
+                  </div>
+                </div>
+                <div class="process-arm-layer process-arm-layer--2">
+                  <div class="process-arm process-arm--image">
+                    <img class="process-arm__image" src="img/etapa2.webp" alt="" loading="lazy" decoding="async">
+                    <span class="process-arm__tag">Etapa 2</span>
+                    <span class="process-arm__state">Stencil</span>
+                  </div>
+                </div>
+                <div class="process-arm-layer process-arm-layer--3">
+                  <div class="process-arm process-arm--image">
+                    <img class="process-arm__image" src="img/etapa3.webp" alt="" loading="lazy" decoding="async">
+                    <span class="process-arm__tag">Etapa 3</span>
+                    <span class="process-arm__state">Lineas base</span>
+                  </div>
+                </div>
+                <div class="process-arm-layer process-arm-layer--4">
+                  <div class="process-arm process-arm--image process-arm--focus">
+                    <img class="process-arm__image" src="img/etapa4.webp" alt="" loading="lazy" decoding="async">
+                    <span class="process-arm__tag">Etapa 4</span>
+                    <span class="process-arm__state">Pieza final</span>
+                  </div>
+                </div>
+              </div>
+              <div class="process__tips">
+                <article class="process-tip is-active" data-stage="1">
+                  <p class="process-tip__step">01</p>
+                  <h3 class="process-tip__title">Brazo limpio</h3>
+                  <p class="process-tip__text">
+                    Base clara y ubicacion.
+                  </p>
+                </article>
+
+                <article class="process-tip" data-stage="2">
+                  <p class="process-tip__step">02</p>
+                  <h3 class="process-tip__title">Stencil preciso</h3>
+                  <p class="process-tip__text">
+                    Posicion y lectura del diseno.
+                  </p>
+                </article>
+
+                <article class="process-tip" data-stage="3">
+                  <p class="process-tip__step">03</p>
+                  <h3 class="process-tip__title">Lineas base</h3>
+                  <p class="process-tip__text">
+                    Lineas limpias y estructura firme.
+                  </p>
+                </article>
+
+                <article class="process-tip" data-stage="4">
+                  <p class="process-tip__step">04</p>
+                  <h3 class="process-tip__title">Resultado final</h3>
+                  <p class="process-tip__text">
+                    Contraste, detalle y terminacion.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="process__markers" aria-hidden="true">
+            <div class="process-marker is-active" data-stage="1"></div>
+            <div class="process-marker" data-stage="2"></div>
+            <div class="process-marker" data-stage="3"></div>
+            <div class="process-marker" data-stage="4"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="trabajos" aria-label="Trabajos destacados">
+      <div class="works__inner">
+        <div class="works__heading">
+          <p class="works__eyebrow">Piezas recientes</p>
+          <h2 class="works__title">Trabajos con presencia, contraste y lectura</h2>
+          <p class="works__intro">
+            Separe la galeria en blackwork y anime para que la lectura sea mas clara y siga con la
+            misma atmosfera de la landing.
+          </p>
+        </div>
+
+        <div class="works-group works-group--blackwork" aria-labelledby="works-blackwork-title">
+          <div class="works-group__divider">
+            <span></span>
+            <h3 id="works-blackwork-title">Blackwork</h3>
+            <span></span>
+          </div>
+
+          <div class="works__grid">
+            <article class="work-card work-card--featured">
+              <div class="work-card__media">
+                <img src="img/blackwork/blackwork6.webp" alt="Trabajo blackwork destacado de Drago Tattoo" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Blackwork destacado</p>
+                <h3 class="work-card__title">Pieza protagonista con contraste fuerte</h3>
+              </div>
+            </article>
+
+            <article class="work-card work-card--tall">
+              <div class="work-card__media">
+                <img src="img/blackwork/blackwork1.webp" alt="Tatuaje blackwork realizado por Drago Tattoo" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Blackwork</p>
+                <h3 class="work-card__title">Lectura vertical y detalle</h3>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__media">
+                <img src="img/blackwork/blackwork2.webp" alt="Tatuaje blackwork de Drago Tattoo" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Blackwork</p>
+                <h3 class="work-card__title">Sombras limpias</h3>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__media">
+                <img src="img/blackwork/blackwork3.webp" alt="Detalle blackwork realizado en estudio" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Blackwork</p>
+                <h3 class="work-card__title">Contraste con presencia</h3>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__media">
+                <img src="img/blackwork/blackwork4.webp" alt="Trabajo blackwork de Drago Tattoo" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Blackwork</p>
+                <h3 class="work-card__title">Volumen y lectura</h3>
+              </div>
+            </article>
+
+            <article class="work-card work-card--tall">
+              <div class="work-card__media">
+                <img src="img/blackwork/blackwork5.webp" alt="Pieza blackwork terminada" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Blackwork</p>
+                <h3 class="work-card__title">Pieza cerrada con caracter</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="works-group" aria-labelledby="works-anime-title">
+          <div class="works-group__divider">
+            <span></span>
+            <h3 id="works-anime-title">Anime</h3>
+            <span></span>
+          </div>
+
+          <div class="works__grid">
+            <article class="work-card work-card--tall">
+              <div class="work-card__media">
+                <img src="img/anime/anime1.webp" alt="Tatuaje estilo anime realizado por Drago Tattoo" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Anime</p>
+                <h3 class="work-card__title">Narrativa en piel</h3>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__media">
+                <img src="img/anime/anime2.webp" alt="Trabajo anime con lineas definidas" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Anime</p>
+                <h3 class="work-card__title">Lineas y expresion</h3>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__media">
+                <img src="img/anime/anime3.webp" alt="Pieza anime destacada de Drago Tattoo" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Anime</p>
+                <h3 class="work-card__title">Escena con impacto visual</h3>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__media">
+                <img src="img/anime/anime4.webp" alt="Tatuaje anime terminado" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Anime</p>
+                <h3 class="work-card__title">Contraste mas sutil</h3>
+              </div>
+            </article>
+
+            <article class="work-card work-card--tall">
+              <div class="work-card__media">
+                <img src="img/anime/anime5.webp" alt="Trabajo anime con composicion vertical" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Anime</p>
+                <h3 class="work-card__title">Composicion vertical</h3>
+              </div>
+            </article>
+
+            <article class="work-card">
+              <div class="work-card__media">
+                <img src="img/anime/anime6.webp" alt="Detalle anime realizado en estudio" loading="lazy" decoding="async">
+              </div>
+              <div class="work-card__body">
+                <p class="work-card__meta">Anime</p>
+                <h3 class="work-card__title">Detalle y lectura clara</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto" aria-label="Contacto y reservas">
+      <div class="contact__inner">
+        <div class="contact__copy">
+          <p class="contact__eyebrow">Reserva tu turno</p>
+          <h2 class="contact__title">Trae tu idea y la bajamos a una pieza con identidad</h2>
+          <p class="contact__lead">
+            Deja tus datos, una referencia de estilo y la zona del cuerpo. La respuesta puede llegar
+            por mail o por Instagram, segun lo que prefieras.
+          </p>
+
+          <div class="contact__details">
+            <p><span>Instagram</span> @drago_tattoo</p>
+            <p><span>Contacto</span> WhatsApp o Instagram</p>
+            <p><span>Atencion</span> Solo con turno previo</p>
+          </div>
+
+          <div class="contact__socials" aria-label="Redes y contacto directo">
+            <a class="contact__social-link" href="https://wa.me/5493513699983" target="_blank" rel="noreferrer" aria-label="WhatsApp de Drago Tattoo">
+              <img src="img/wsp.webp" alt="">
+              <span>WhatsApp</span>
+            </a>
+            <a class="contact__social-link" href="https://www.instagram.com/drago_tattoo/" target="_blank" rel="noreferrer" aria-label="Instagram de Drago Tattoo">
+              <img src="img/instagram.webp" alt="">
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" data-demo-form action="#" method="POST">
+          <input type="hidden" name="_subject" value="Nueva consulta desde Drago Tattoo">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <label class="contact-form__field">
+            <span>Nombre</span>
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+          </label>
+
+          <label class="contact-form__field">
+            <span>Mail</span>
+            <input type="email" name="email" placeholder="tu@mail.com" required>
+          </label>
+
+          <label class="contact-form__field">
+            <span>Instagram</span>
+            <input type="text" name="instagram" placeholder="@tuusuario">
+          </label>
+
+          <label class="contact-form__field">
+            <span>Idea / referencia</span>
+            <textarea name="idea" rows="5" placeholder="Contame la idea, estilo, tamano y zona del cuerpo" required></textarea>
+          </label>
+
+          <button class="contact-form__submit" id="reservar" type="submit">Enviar consulta</button>
+          <p class="contact-form__note" aria-live="polite">
+            En esta primera version, las consultas se coordinan por WhatsApp o Instagram.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div>
+        <p class="site-footer__brand">Drago Tattoo</p>
+        <p class="site-footer__text">Blackwork, anime y piezas con caracter.</p>
+      </div>
+
+      <div class="site-footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
