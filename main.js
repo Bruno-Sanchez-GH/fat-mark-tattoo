@@ -110,6 +110,7 @@ lazyImages.forEach((image) => {
 
 const workCards = document.querySelectorAll(".work-card");
 const worksToggles = document.querySelectorAll("[data-works-toggle]");
+const testimonyCards = document.querySelectorAll(".testimony-card");
 
 if (workCards.length) {
   const cardObserver = new IntersectionObserver(
@@ -145,6 +146,29 @@ worksToggles.forEach((toggle) => {
     toggle.querySelector("span").textContent = isExpanded ? "Ver menos" : "Ver mas";
   });
 });
+
+if (testimonyCards.length) {
+  // Activates each testimonial as it enters view so the ink reveal
+  // feels tied to scroll instead of running immediately on page load.
+  const testimonyObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("is-visible");
+        testimonyObserver.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.28,
+      rootMargin: "0px 0px -8% 0px",
+    }
+  );
+
+  testimonyCards.forEach((card) => testimonyObserver.observe(card));
+}
 
 const processMarkers = document.querySelectorAll(".process-marker");
 const processTips = document.querySelectorAll(".process-tip");

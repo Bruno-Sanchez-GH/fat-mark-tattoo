@@ -1086,6 +1086,157 @@ img.is-loaded {
   padding: 4.5rem 1.2rem;
 }
 
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 26%, rgba(61, 27, 27, 0.18), transparent 24%),
+    radial-gradient(circle at 76% 22%, rgba(255, 255, 255, 0.03), transparent 18%),
+    linear-gradient(180deg, #151212, #0f0c0c 74%);
+  color: #f3ece7;
+  padding: 4.6rem 1.2rem 4.9rem;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0)),
+    repeating-linear-gradient(90deg, transparent 0 34px, rgba(255, 255, 255, 0.012) 34px 35px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.testimonials__inner {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.testimonials__heading {
+  width: min(33rem, 100%);
+}
+
+.testimonials__eyebrow {
+  margin: 0;
+  color: rgba(243, 236, 231, 0.72);
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.testimonials__title {
+  margin: 0.38rem 0 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 5vw, 3.15rem);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.testimonials__grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.testimony-card {
+  position: relative;
+  overflow: hidden;
+  padding: 1.15rem 1rem 1.2rem;
+  border: 1px solid rgba(243, 236, 231, 0.08);
+  background:
+    linear-gradient(180deg, rgba(42, 37, 36, 0.74), rgba(14, 12, 12, 0.9)),
+    #141111;
+  box-shadow: 0 22px 36px rgba(0, 0, 0, 0.26);
+  isolation: isolate;
+}
+
+.testimony-card::before {
+  content: "";
+  position: absolute;
+  inset: auto auto -2.5rem -2.8rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 46% 54% 52% 48% / 54% 41% 59% 46%;
+  background:
+    radial-gradient(circle at 40% 38%, rgba(96, 37, 37, 0.8), rgba(38, 17, 17, 0.92) 58%, rgba(13, 10, 10, 0.96));
+  filter: blur(18px);
+  opacity: 0;
+  transform: scale(0.2);
+  transform-origin: 34% 66%;
+  transition:
+    opacity 220ms ease,
+    transform 900ms cubic-bezier(0.22, 0.72, 0.18, 1) var(--reveal-delay);
+}
+
+.testimony-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 22% 72%, rgba(255, 255, 255, 0.04), transparent 24%),
+    radial-gradient(circle at 86% 24%, rgba(61, 27, 27, 0.16), transparent 18%);
+  opacity: 0;
+  transition: opacity 520ms ease calc(var(--reveal-delay) + 180ms);
+  pointer-events: none;
+}
+
+.testimony-card__name,
+.testimony-card__text {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  clip-path: inset(0 100% 0 0 round 0.6rem);
+  filter: blur(5px);
+}
+
+.testimony-card__name {
+  margin: 0;
+  color: rgba(243, 236, 231, 0.92);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition:
+    opacity 280ms ease calc(var(--reveal-delay) + 220ms),
+    clip-path 680ms cubic-bezier(0.24, 0.8, 0.18, 1) calc(var(--reveal-delay) + 120ms),
+    filter 680ms ease calc(var(--reveal-delay) + 120ms);
+}
+
+.testimony-card__text {
+  margin: 0.65rem 0 0;
+  color: rgba(243, 236, 231, 0.76);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  transition:
+    opacity 320ms ease calc(var(--reveal-delay) + 430ms),
+    clip-path 900ms cubic-bezier(0.24, 0.8, 0.18, 1) calc(var(--reveal-delay) + 280ms),
+    filter 900ms ease calc(var(--reveal-delay) + 280ms);
+}
+
+.testimony-card.is-visible::before {
+  opacity: 0.95;
+  transform: scale(1.2);
+}
+
+.testimony-card.is-visible::after {
+  opacity: 1;
+}
+
+.testimony-card.is-visible .testimony-card__name,
+.testimony-card.is-visible .testimony-card__text {
+  opacity: 1;
+  clip-path: inset(0 0 0 0 round 0.6rem);
+  filter: blur(0);
+}
+
 .contact::before,
 .contact::after {
   content: "";
@@ -1473,6 +1624,15 @@ img.is-loaded {
     padding: 5rem 1.8rem 5.5rem;
   }
 
+  .testimonials {
+    padding: 5rem 1.8rem 5.4rem;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.15rem;
+  }
+
   .works__grid {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 1.15rem;
@@ -1643,6 +1803,10 @@ img.is-loaded {
     gap: 1.35rem;
   }
 
+  .testimonials__grid {
+    gap: 1.35rem;
+  }
+
   .contact__inner {
     grid-template-columns: minmax(18rem, 1fr) minmax(24rem, 31rem);
     gap: 4rem;
@@ -1737,6 +1901,14 @@ img.is-loaded {
 
   .works {
     padding-inline: 0.9rem;
+  }
+
+  .testimonials {
+    padding-inline: 0.9rem;
+  }
+
+  .testimonials__grid {
+    gap: 0.9rem;
   }
 
   .works-group + .works-group {
