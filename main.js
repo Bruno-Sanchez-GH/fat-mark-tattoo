@@ -8,13 +8,13 @@ if (menuToggle && menuPanel) {
 
   const closeMenu = () => {
     menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "Abrir menu");
+    menuToggle.setAttribute("aria-label", "Abrir menú");
     menuPanel.classList.remove("is-open");
   };
 
   const openMenu = () => {
     menuToggle.setAttribute("aria-expanded", "true");
-    menuToggle.setAttribute("aria-label", "Cerrar menu");
+    menuToggle.setAttribute("aria-label", "Cerrar menú");
     menuPanel.classList.add("is-open");
   };
 
@@ -143,7 +143,7 @@ worksToggles.forEach((toggle) => {
 
     const isExpanded = group.classList.toggle("is-expanded");
     toggle.setAttribute("aria-expanded", String(isExpanded));
-    toggle.querySelector("span").textContent = isExpanded ? "Ver menos" : "Ver mas";
+    toggle.querySelector("span").textContent = isExpanded ? "Ver menos" : "Ver más";
   });
 });
 

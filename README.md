@@ -1,18 +1,19 @@
-# Dragotattoo
+# Fat Mark Tattoo
 
-Landing page para Drago Tattoo desarrollada con HTML, CSS y JavaScript puro.
+Landing page para Fat Mark Tattoo desarrollada con HTML, CSS y JavaScript puro.
 
 ## Incluye
 
-- Navbar responsive con menu hamburguesa
-- Hero animado con maquina tatuando el titulo
-- Seccion Sobre mi
-- Seccion Proceso con animacion por etapas en scroll
-- Galeria separada en Blackwork y Anime
-- Seccion de contacto
+- Navbar responsive con menú hamburguesa
+- Hero animado con máquina tatuando el título
+- Sección Sobre mí
+- Sección Proceso con animación por etapas en scroll
+- Galería separada en Tradicional y Japonés
+- Sección de ubicación con Google Maps
+- Sección de contacto
 - Footer
 
-## Tecnologias
+## Tecnologías
 
 - HTML5
 - CSS3
@@ -27,5 +28,4 @@ Landing page para Drago Tattoo desarrollada con HTML, CSS y JavaScript puro.
 
 ## Estado
 
-Primera etapa lista para deploy estatico.
-
+Primera etapa lista para deploy estático.
